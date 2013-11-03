@@ -1,0 +1,36 @@
+.white_bg {
+	background-color: #FFF;
+	margin: 0 auto;
+	height: 500px;
+	width: 40%;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 5000;
+}
+
+.white_bg div img {
+	float: left;
+	display: inline-block;
+}
+
+
+body {
+	background-color: #F74C00;
+	z-index: 1;
+}
+
+h1 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+	color: #FFF;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;	
+}
+
+
+img {
+	padding: 10px 10px;
+}
