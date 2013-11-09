@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	height: 500px;
 	width: 40%;
-	overflow: hidden;
+	overflow: scroll;
 	white-space: nowrap;
 	z-index: 5000;
 }
@@ -33,4 +33,15 @@ li {
 
 img {
 	padding: 10px 10px;
+}
+
+#arrow_left {
+	top:40%;
+	display: inline-block;
+}
+
+#arrow_right {
+	top: 40%;
+	display: inline-block;
+	float: right;
 }
