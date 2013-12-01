@@ -121,6 +121,47 @@ transition = true;
 //else, increment the currLvlNm
 if(currLvlNm===game.numOfLvls){currLvlNm=1;prevLvlNm=game.numOfLvls}
 else{prevLvlNm = currLvlNm;currLvlNm++}
+
+//turn RGB into an array and place it into a var. prevArray is for previous rgb array
+
+var prevStr.split(",");
+
+//turn RGB into an array and place it into a var. currentArray is for previous rgb array
+
+var currStr=game['colorStyle']['level'+currLvNm];
+
+currentArray = currStr.split(",");
+
+//now we have the array's transition the backgrounds
+
+transitionBG()
+
+};
+
+function transitionBG() {
+
+	//loop through the three valued in p
+
+for (var i = prevArray.length -1; i > = 0; i --) {
+	// if prevArray[0] is less than currentArray[0], add 1
+
+if(prevArray[i]<currentArray[i]){
+prevArray[i] =parseInt(prevArray[i])+1;	
+}	
+
+//if prevArray[0] is greater than currentArray[0]
+else if(prevArray[i]>currentArray[i]){
+	prevArray[i]=parseInt(prevArray[i])-1;
+}
+//set current color to new values in prevArray
+game['colorStyle']['main']= prevArray[0]+','+prevArray[1]+','+prevArray[2];
+}
+
+var p = prevArray; var c = currentArray;
+
+if(p[0]!=c[0] || p[1]!=c[1] || p[2]!=c[2]){}
+else{transition = false; if(continuousBG)changeBG();}
+
 }
 
 
