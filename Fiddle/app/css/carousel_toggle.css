@@ -1,0 +1,46 @@
+body { 
+	margin: 0;
+	padding:0;
+}
+
+#hitarea {
+    position: fixed;
+	opacity: 0;
+	height: 7507px;
+	width: 640px;
+	z-index:2;
+}
+
+
+.carousel {
+	font-size: 0;
+	white-space: nowrap;
+	width: 640px;
+	overflow: hidden;
+	position:fixed;
+	top:0;
+	left:0px;	
+	opacity:1;
+	display: none;
+	z-index:1;
+
+}
+
+.wrapper {
+	position: relative;
+	left: auto;
+	float: left;
+	width:100%;
+}
+
+
+
+#background {
+   top:0;
+   left:0;
+   z-index: 0;
+}
+
+
+	
+

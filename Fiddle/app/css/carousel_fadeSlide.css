@@ -1,0 +1,66 @@
+body { 
+	margin: 0;
+	padding:0;
+}
+
+#hitarea {
+    position: fixed;
+	opacity: 0;
+	height: 7507px;
+	width: 640px;
+	z-index: 1;
+	z-index:5001;
+}
+
+
+.carousel {
+	font-size: 0;
+	white-space: nowrap;
+	width: 640px;
+	overflow: hidden;
+	position:fixed;
+	top:0;
+	left:0px;	
+	opacity:0;
+	z-index:5000;
+}
+
+.wrapper {
+	position: relative;
+	left: auto;
+	float: left;
+	width:100%;
+	margin-top: 200px;
+}
+
+.carousel img {
+	display: inline-block;
+	width:100%;
+}
+
+.popup {
+	position: fixed;
+	top:0;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+	width: 640px;
+	height: 140%;
+/* 	-webkit-transform: scale(0.8); */
+	-webkit-transform-origin-y: 0;
+}
+
+.popup img {
+	width: 100%;
+	top:0;
+	left: 0;
+}
+
+
+
+#background {
+   top:0;
+   left:0;
+   z-index: 0;
+}
+
