@@ -2,7 +2,7 @@
 	background-color: #FFF;
 	margin: 0 auto;
 	height: 500px;
-	width: 40%;
+	width: 30%;
 	overflow: scroll;
 	white-space: nowrap;
 	z-index: 5000;
@@ -29,6 +29,8 @@ h1 {
 li {
 	list-style-type: none;
 	display: inline;	
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
