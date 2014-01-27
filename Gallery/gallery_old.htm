@@ -8,22 +8,39 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
  	<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1,  maximum-scale=1"> 	
  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+ 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
  	<script src="app/js/jcarousellite_1.0.1.min.js"></script>
-	<script type="text/javascript" src ="app/js/gallery.js"></script>
+
 </head>	
 
 <body>
 	<button class="left"><img src="app/img/arrow_left.png"></button>
 
+	<script type="text/javascript" src ="app/js/gallery_old.js"></script>
+
 	<div class = "wrapper">
-		<ul>
-		</ul>
+		<div id ="gallery">
+			<img id = "largeImage" src = "app/img/beak.png"/>
+		</div>
 	</div>
 	<div class = "thumbs">
 	</div>
 
 	<button class="right"><img src="app/img/arrow_right.png"></button>
+
+	<script>
+ 		  $.getJSON("app/js/gallery.json", function(data) {
+ 			console.log(data.galleryImages);
+
+ 		});
+
+ 	<>	  
+
+
+
+ 	
 	
 </body>
+
 
 </html>
