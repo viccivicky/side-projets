@@ -1,0 +1,21 @@
+li {
+	overflow: hidden;
+	width: 450px;
+
+}
+
+.right {
+	display: inline-block;
+
+}
+
+.wrapper {
+	width: 450px;
+	overflow: hidden;
+}
+
+.thumbs {
+	height: 90px;
+	width: 90px;
+	margin: 10px 10px;
+}

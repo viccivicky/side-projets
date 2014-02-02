@@ -36,11 +36,13 @@ $(function(){
 
 	$(data).each(function(index, item) {
 		console.log(item);
-		$('<li>').append($('<img>').attr('src', item.src).attr('width', 200).attr('height', 200)).appendTo('.wrapper ul');
+		$('<li>').append($('<img>').attr('src', item.src).attr('width', 450).attr('height', 450)).appendTo('.wrapper ul');
 	});
 
 	$(".wrapper").jCarouselLite({
 		btnNext: ".right",
 		btnPrev: ".left"
 	});
+
+	var thumbnails = $(".thumbs li ");
 });
