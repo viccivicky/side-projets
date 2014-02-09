@@ -1,16 +1,10 @@
-li {
-	overflow: hidden;
-	width: 450px;
-
-}
-
 .right {
 	display: inline-block;
 
 }
 
 .wrapper {
-	width: 450px;
+	width: 50px;
 	overflow: hidden;
 }
 
