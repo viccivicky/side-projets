@@ -41,7 +41,8 @@ $(function(){
 
 	$(".wrapper").jCarouselLite({
 		btnNext: ".right",
-		btnPrev: ".left"
+		btnPrev: ".left",
+		visible: 1
 	});
 
 	var thumbnails = $(".thumbs li ");
