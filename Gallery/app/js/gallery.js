@@ -45,5 +45,19 @@ $(function(){
 		visible: 1
 	});
 
-	var thumbnails = $(".thumbs li ");
+});
+
+ $(function() {
+	var thumbnails = $("data");
+
+	thumbnails.bind("click", function () {
+		wrapper.attr({
+			src: $(this).attr("href")
+		})
+
+		return false;
+
+	}); 
+
+
 });
