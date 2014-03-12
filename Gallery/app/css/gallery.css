@@ -6,10 +6,25 @@
 .wrapper {
 	width: 50px;
 	overflow: hidden;
+	margin: auto;
 }
 
 .thumbs {
-	height: 90px;
-	width: 90px;
-	margin: 10px 10px;
+	width: 650px;
+	margin: auto;
+	background-color: #fff;	
 }
+
+.thumbs ul li {
+	clear: both;
+	padding: 20px 20px 20px 20px;
+	display: inline;
+}
+
+ul li {
+	list-style-type: none;
+	
+}
+
+
+
