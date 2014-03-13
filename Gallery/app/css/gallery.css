@@ -1,17 +1,22 @@
 .right {
 	display: inline-block;
+	margin: auto;
 
 }
 
 .wrapper {
 	width: 50px;
 	overflow: hidden;
-	margin: auto;
+	display: inline-block;
+}
+
+.wrapper ul li img {
+    width: 450px;
+    height: 450px;
 }
 
 .thumbs {
-	width: 650px;
-	margin: auto;
+	width: 750px;
 	background-color: #fff;	
 }
 
@@ -21,9 +26,23 @@
 	display: inline;
 }
 
+.thumbs ul li img {
+    width: 150px;
+    height: 150px;
+}
+
+
+li img {
+	padding: 10px 10px;
+}
+
 ul li {
 	list-style-type: none;
 	
+}
+
+ul {
+	padding: 0px;
 }
 
 

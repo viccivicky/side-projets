@@ -1,31 +1,57 @@
-$(function(){
-	var data = [
-	{
-		"src" : "app/img/x_eyes.png",
-		"description" : "cross eyes"
-	},
-	{
-		"src" : "app/img/dot_eyes.png",
-		"description" : "dot eyes"
-	},
-	{
-		"src" : "app/img/beak.png",
-		"description" : "dot eyes"
-	},
-	{
-		"src" : "app/img/intoxicated.png",
-		"description" : "dot eyes"
-	},
-	{
-		"src" : "app/img/line_eyes.png",
-		"description" : "dot eyes"
-	},	
-	{
-		"src" : "app/img/one_eye.png",
-		"description" : "dot eyes"
-	}
-	];
+$(function () {
+    var data = [
+        {
+            "src": "app/img/x_eyes.png",
+            "description": "cross eyes"
+        },
+        {
+            "src": "app/img/dot_eyes.png",
+            "description": "dot eyes"
+        },
+        {
+            "src": "app/img/beak.png",
+            "description": "dot eyes"
+        },
+        {
+            "src": "app/img/intoxicated.png",
+            "description": "dot eyes"
+        },
+        {
+            "src": "app/img/line_eyes.png",
+            "description": "dot eyes"
+        },
+        {
+            "src": "app/img/one_eye.png",
+            "description": "dot eyes"
+        }
+    ], externalControls = [];
 
+    $(data).each(function (index, item) {
+        var carousel = $('.wrapper ul'),
+            thumbnails = $('.thumbs ul');
+
+        carousel.append($('<li>').append(
+            $('<img>').attr('src', item.src))
+        );
+
+        thumbnails.append($('<li>').append(
+            $('<img>').attr('src', item.src))
+        );
+
+        externalControls.push('.thumbs ul li:nth-child(' + (index + 1) + ') img');
+    });
+
+    $(".wrapper").jCarouselLite({
+        btnNext: ".right",
+        btnPrev: ".left",
+        visible: 1,
+        btnGo: externalControls
+    });
+});
+
+
+
+/* 
 	$(data).each(function(index, item) {
 		console.log(item);
 		$('<li>').append($('<img>').attr('src', item.src).attr('width', 450).attr('height', 450)).appendTo('.wrapper ul');
@@ -47,53 +73,51 @@ $(function(){
 
 });
 
-	
 
-
-/* $(function() {
-	$("#data").JSONView(data);
-}
+$(function() {
+ $("#data").JSONView(data);
+ }
 
  var thumbs = function(index, item){
-	console.log(thumbs);
-} 
+ console.log(thumbs);
+ }
 
 
  function thumbnails(element){
-	var largeImg = document.getElementById(element);
-	
-	for(var i = 0; i < data.length; i++) {
-	if(i === data[i].src == largeImg.src ) {
-		if(i === imgArray.length){
-			document.getElementById(element).src = data[0].src;
-			break;
-		}
-		document.getElementById(element).src = data[i+1].src;
-		break;
-	}
-}
+ var largeImg = document.getElementById(element);
+
+ for(var i = 0; i < data.length; i++) {
+ if(i === data[i].src == largeImg.src ) {
+ if(i === imgArray.length){
+ document.getElementById(element).src = data[0].src;
+ break;
+ }
+ document.getElementById(element).src = data[i+1].src;
+ break;
+ }
+ }
 
 
  var thumbnails = function(index, item) {
-	console.log(thumbnails);
-};
+ console.log(thumbnails);
+ };
 
  $(function() {
-	var thumbnails = data.map(function(arrayCell){return arrayCell});
-	
-	var thumbnails = [];
-	for(var i = 0; i < data.length; i++) {
-		thumbnails[i] =(data[i]);
-	};
+ var thumbnails = data.map(function(arrayCell){return arrayCell});
 
-	 thumbnails.bind("click", function () {
-		wrapper.attr({
-			src: $(this).attr("href")
-		})
+ var thumbnails = [];
+ for(var i = 0; i < data.length; i++) {
+ thumbnails[i] =(data[i]);
+ };
 
-		return false;
+ thumbnails.bind("click", function () {
+ wrapper.attr({
+ src: $(this).attr("href")
+ })
 
-	}); */
+ return false;
+
+ }); */
 
 
  
