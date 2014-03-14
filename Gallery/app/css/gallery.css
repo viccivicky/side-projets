@@ -46,4 +46,44 @@ ul {
 }
 
 
+/* ------------media query ----------*/
 
+@media (max-width: 900px) and (min-width: 600px) {
+      .wrapper {
+      	width: 80%;
+      	height: 80%;
+      	background-color: green;
+	      
+    }
+      
+      .thumbs ul li img {
+		width: 30%;
+		height: 30%;
+   	}	
+      
+	      
+      }
+      
+
+
+@media (max-width: 600px) {
+	.wrapper {
+		background-color: yellow;
+		width: 60%;
+		height: 60%;
+	}
+	
+	.wrapper ul li img{
+		clear: both;
+		width: 60%;
+		height: 60%;
+
+	}
+	
+	.thumbs {
+		width: 95%;
+	}
+	
+
+	
+}
