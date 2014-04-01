@@ -1,0 +1,51 @@
+.right {
+	display: inline-block;
+	margin: auto;
+
+}
+
+.wrapper  {
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.wrapper ul li img {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+	display: inline-block;
+}
+
+.thumbs {
+	width: 750px;
+	background-color: #fff;	
+}
+
+.thumbs ul li {
+	clear: both;
+	padding: 20px 20px 20px 20px;
+	display: inline;
+}
+
+.thumbs ul li img {
+    width: 150px;
+    height: 150px;
+}
+
+
+li img {
+	padding: 10px 10px;
+}
+
+ul li {
+	list-style-type: none;
+	
+}
+
+ul {
+	padding: 0px;
+}
+
+
