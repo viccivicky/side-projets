@@ -25,26 +25,55 @@ $(function () {
             "description": "dot eyes"
         }
     ], externalControls = [];
-
-    $(data).each(function (index, item) {
+	
+		// move this outside the loop as otherwise you declare it everytime which uses memory
         var carousel = $('.wrapper ul'),
             thumbnails = $('.thumbs ul');
             
-	carousel.append($('<li>').append(
+    $(data).each(function (index, item) {
+            
+		carousel.append($('<li>').append(
             $('<img>').attr('src', item.src))
         );
 
-     thumbnails.append($('<li>').append(
-            $('<img>').attr('src', item.src))
-        );
+		// add your list_item as a var so we can access it a bit more easily
+		var list_item  = $('<li>').append($('<img>').attr('src', item.src));
+		// append the list to thumbnails
+		thumbnails.append(list_item)
+		
+		// add a reference to the list_item from the json object
+		// using data https://api.jquery.com/jQuery.data/
+
+		
+/*
 	
 	$('.thumbs').on('click', function () {
 		$(this).attr('.thumbs ul li:nth-child(' + (index + 1) + ') img');
 	});
+*/
 		
 
     });
     
+    
+    // we can now add our event delegation 
+    thumbnails.on("click", 'li', function(evt){
+		
+		// reference to the list_item
+		var list_item = $(this);
+		
+		// check we are getting the list_item
+		console.log(list_item)
+		
+		// get the json reference .data from list_item
+		
+		// now match that to data and add that to a variable
+		
+		// we can now get the src variable 
+		
+		// and swap that out  the  image in wrapper
+		
+	});
 
 });
 
