@@ -29,12 +29,12 @@ $(function () {
 		// move this outside the loop as otherwise you declare it everytime which uses memory
         var carousel = $('.wrapper ul'),
             thumbnails = $('.thumbs ul');
+          
+          
+         set_carousel(3)
             
     $(data).each(function (index, item) {
             
-		carousel.append($('<li>').append(
-            $('<img>').attr('src', item.src))
-        );
 
 		// add your list_item as a var so we can access it a bit more easily
 		var list_item  = $('<li>').append($('<img>').attr('src', item.src));
@@ -43,7 +43,8 @@ $(function () {
 		
 		// add a reference to the list_item from the json object
 		// using data https://api.jquery.com/jQuery.data/
-
+		
+		list_item.data('position', index)
 		
 /*
 	
@@ -63,7 +64,11 @@ $(function () {
 		var list_item = $(this);
 		
 		// check we are getting the list_item
-		console.log(list_item)
+		var position = list_item.data('position')
+		
+		console.log(data[position].src);
+		
+		set_carousel(position)
 		
 		// get the json reference .data from list_item
 		
@@ -74,6 +79,15 @@ $(function () {
 		// and swap that out  the  image in wrapper
 		
 	});
+	
+	function set_carousel(pst){
+		carousel.empty().append($('<li>').append(
+			$('<img>').attr('src', data[pst].src))
+		).append($('<span>').html(data[pst].description)); 
+		
+	};
+		
+	
 
 });
 
