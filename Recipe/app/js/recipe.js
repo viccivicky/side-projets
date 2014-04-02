@@ -93,9 +93,22 @@ $(function () {
 	});
 	
 	function set_carousel(pst){
-		display.empty().append($('<span>').html(data[pst].description))
-		.append($('<li>').append($('<ul>'))
-		); 
+		
+		display.empty();
+		
+		var content = $('<li>');
+		display.append(content);
+		
+		var content_title = $('<h2>', {"html":data[pst].title});
+		content.append(content_title);
+		
+		var content_sub_heading = $('<h3>', {"html":data[pst].sub_heading});
+		content.append(content_sub_heading);
+		
+		
+		var content_txt = $('<span>', {"html": data[pst].description});
+		content.append(content_txt);
+		
 		
 	};
 	
@@ -107,6 +120,12 @@ $(function () {
 
 
 /*	
+		display.empty().append($('<span>').html(data[pst].description))
+		.append($('<li>').append($('<ul>'))
+		); 
+		
+		
+		
 		thumbnails.click(function () {
 		carousel.attr({
 			src: $(this).attr('img');
