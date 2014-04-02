@@ -1,0 +1,45 @@
+.menu {
+	display: inline-block;
+	top: 0px;
+	position: fixed;
+	margin-top: 9px;
+	color: #ffffff;
+
+}
+
+.menu ul li {
+	width: 150px;
+	height: 45px;
+	background-color: #cecece;
+	border-bottom: solid 1px #bcbcbc; 
+}
+
+
+.wrapper  {
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+	background-color: #f0f0f0;
+	display: inline-block;
+	left: 15%;
+	position: absolute;
+}
+
+.wrapper ul li {
+    overflow: hidden;
+}
+
+
+ul li {
+	list-style-type: none;
+	
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+
