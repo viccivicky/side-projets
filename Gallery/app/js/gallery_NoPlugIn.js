@@ -43,7 +43,7 @@ $(function () {
 		
 		// add a reference to the list_item from the json object
 		// using data https://api.jquery.com/jQuery.data/
-
+		list_item.data('position',index);
 		
 /*
 	
@@ -63,7 +63,7 @@ $(function () {
 		var list_item = $(this);
 		
 		// check we are getting the list_item
-		console.log(list_item)
+		console.log(list_item.data('position'));
 		
 		// get the json reference .data from list_item
 		
