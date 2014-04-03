@@ -75,9 +75,9 @@ $(function () {
 		// check we are getting the list_item
 		var position = list_item.data('position')
 		
-		$(this).addClass(function (){
-			$(this)
-		})
+		/* $(this).addClass(function (){
+			$(this) 
+		}) */
 		
 		/* $(this).toggle(function(){
 			$(this).addClass("select");
