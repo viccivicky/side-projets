@@ -64,6 +64,8 @@ $(function () {
 		
     });
     
+    	$('.selected').removeClass('selected');
+    
     
     
     // we can now add our event delegation 
@@ -74,6 +76,8 @@ $(function () {
 		
 		// check we are getting the list_item
 		var position = list_item.data('position')
+		
+		$(this).toggle('.selected').addClass('selected');		
 		
 		/* $(this).addClass(function (){
 			$(this) 
