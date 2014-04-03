@@ -34,7 +34,8 @@ $(function () {
 	
 		// move this outside the loop as otherwise you declare it everytime which uses memory
         var display = $('.wrapper ul'),
-            left_nav = $('.menu ul');
+            left_nav = $('.menu ul'),
+            nav_list = $('.menu ul li');
           
           
          set_carousel(0)
@@ -61,22 +62,33 @@ $(function () {
 		
 		list_item.data('position', index)
 		
-			
-
     });
-    
-    
     
     
     
     // we can now add our event delegation 
     left_nav.on("click", 'li', function(evt){
-		
+
 		// reference to the list_item
 		var list_item = $(this);
 		
 		// check we are getting the list_item
 		var position = list_item.data('position')
+		
+		$(this).addClass(function (){
+			$(this)
+		})
+		
+		/* $(this).toggle(function(){
+			$(this).addClass("select");
+		}, function() {
+			$(this).removeClass("select");
+		}); */
+		
+		
+		//$(this).toggle();
+		
+
 		
 		console.log(data[position].src);
 		
