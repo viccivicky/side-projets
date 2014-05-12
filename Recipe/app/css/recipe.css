@@ -1,31 +1,3 @@
-.menu {
-	display: inline-block;
-	top: 0px;
-	position: fixed;
-	margin-top: 9px;
-	color: #ffffff;
-
-}
-
-.menu ul li {
-	width: 150px;
-	height: 45px;
-	background-color: #cecece;
-	border-bottom: solid 1px #bcbcbc; 
-}
-
-
-
-.menu ul li:active {
-	background-color: #000000;
-}
-
-.selected {
-	background-color: #000000;
-}
-
-
-
 .wrapper  {
 	width: 500px;
 	height: 500px;
@@ -57,4 +29,30 @@ h2 {
 }
 
 
+
+.menu {
+	display: inline-block;
+	top: 0px;
+	position: fixed;
+	margin-top: 9px;
+	color: #ffffff;
+
+}
+
+.menu ul li {
+	width: 150px;
+	height: 45px;
+	background-color: #cecece;
+	border-bottom: solid 1px #bcbcbc; 
+}
+
+
+
+.menu ul li:active {
+	background-color: #000000;
+}
+
+.menu ul li.selected {
+	background-color: #000000;
+}
 

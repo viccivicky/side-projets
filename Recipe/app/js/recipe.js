@@ -64,7 +64,7 @@ $(function () {
 		
     });
     
-    	$('.selected').removeClass('selected');
+    	
     
     
     
@@ -77,7 +77,9 @@ $(function () {
 		// check we are getting the list_item
 		var position = list_item.data('position')
 		
-		$(this).toggle('.selected').addClass('selected');		
+		$('.selected').removeClass('selected');
+		
+		$(this).addClass('selected');		
 		
 		/* $(this).addClass(function (){
 			$(this) 
