@@ -1,0 +1,16 @@
+	var images = [
+	{
+		"src" : "app/img/x_eyes.png",
+		"description" : "cross eyes"
+	},
+	{
+		"src" : "app/img/dot_eyes.png",
+		"description" : "dot eyes"
+	},
+	{
+		"src" : "app/img/beak.png",
+		"description" : "dot eyes"
+	}
+
+	]	
+
