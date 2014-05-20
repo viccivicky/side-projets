@@ -1,4 +1,6 @@
-[
+$(function() {
+var data = 	[
+    
     {
         "label": "Spring",
         "recipies": [
@@ -52,3 +54,5 @@
         ]
     }
 ]
+
+});

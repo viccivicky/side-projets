@@ -1,4 +1,4 @@
-$(function () {
+/* $(function () {
     var data = [
         {
             "title": "Story 1",
@@ -30,12 +30,12 @@ $(function () {
             "sub_heading": "Sub-heading 6",
             "description": "Lorem ipsum 6 dolor sit amet, consectetur adipiscing elit. Vestibulum ornare porta elit, at feugiat mauris blandit nec. Nulla adipiscing ante ut imperdiet faucibus. Praesent libero nisi, dignissim at diam sed, posuere bibendum lorem. Maecenas interdum ut sapien a interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sodales tempor mi, non fermentum erat adipiscing sit amet. Etiam pellentesque lacus sit amet lorem suscipit, a mollis arcu vehicula. Donec feugiat orci ut massa scelerisque placerat. Vivamus congue dapibus dolor eu dictum. Suspendisse non euismod mauris. Aliquam volutpat tortor non enim congue porta. Sed lacinia cursus elit eu eleifend. Proin tristique interdum odio eget sodales."
         }
-    ], externalControls = [];
+    ], externalControls = []; */
 	
 		// move this outside the loop as otherwise you declare it everytime which uses memory
         var display = $('.wrapper ul'),
-            left_nav = $('.menu ul'),
-            nav_list = $('.menu ul li');
+            top_nav = $('.menu ul'),
+            nav_list = $('.menu ul li'); 
           
           
          set_carousel(0)
@@ -46,7 +46,7 @@ $(function () {
 		// add your list_item as a var so we can access it a bit more easily
 		var list_item  = $('<li>').html(item.title);
 		// append the list to thumbnails
-		left_nav.append(list_item)
+		top_nav.append(list_item)
 		
 		
 		/* function nav_text(txt) {
@@ -69,7 +69,7 @@ $(function () {
     
     
     // we can now add our event delegation 
-    left_nav.on("click", 'li', function(evt){
+    top_nav.on("click", 'li', function(evt){
 
 		// reference to the list_item
 		var list_item = $(this);
