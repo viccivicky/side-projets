@@ -16,18 +16,30 @@ var page_container = function()
 
 
 // 2 - A div for you your season nav tabs 
-	var seasons_nav = $("<div />").html(item.title)
-	
-	
-	
-	/* add your list_item as a var so we can access it a bit more easily
-		var list_item  = $('<li>').html(item.title);
-		// append the list to thumbnails */
 
+	          
+    $(data).each(function (index, item) {
+            
+
+		var season  = $('<div/>').html(item.label);
+		top_nav.append(seasons)
+		
+
+		
+		
+		console.log(item.label);
+		
+		
+		seasons.data('label', index)
+		
+    });
 
 	
-	console.log(item, title);
+	
 // 3 - A div  for the individual recipies of a selected season
+
+	
+	
 	
 /*
 
@@ -35,11 +47,8 @@ var page_container = function()
 	file : data/seasons.json	
 */
 
-$(data).each(function(index, item){
 
-	seasons.data('label', index)
 	
-});
 
 /// when the ajax request is complete: 
 // 5 - Make the data response a global variable called seasons_object so all parts of the app can access it
