@@ -1,0 +1,53 @@
+{
+	"items": [
+		{
+		    "label": "Spring",
+		    "recipies": [
+		        {
+		            "label": "Risotto",
+		            "json_file": "risotto.json"
+		        },
+		        {
+		            "label": "Pizza",
+		            "json_file": "pizza.json"
+		        }
+		    ]
+		}, {
+		    "label": "Summer",
+		    "recipies": [
+		        {
+		            "label": "Risotto",
+		            "json_file": "risotto.json"
+		        },
+		        {
+		            "label": "Pizza2",
+		            "json_file": "pizza.json"
+		        }
+		    ]
+		}, {
+		    "label": "Autumn",
+		    "recipies": [
+		        {
+		            "label": "Risotto",
+		            "json_file": "risotto.json"
+		        },
+		        {
+		            "label": "Pizza",
+		            "json_file": "pizza.json"
+		        }
+		    ]
+		}, {
+		    "label": "Winter",
+		    "recipies": [
+		        {
+		            "label": "Risotto",
+		            "json_file": "risotto.json"
+		        },
+		        {
+		            "label": "Pizza",
+		            "json_file": "pizza.json"
+		        }
+		    ]
+		}
+	]
+}
