@@ -46,6 +46,10 @@
 		        {
 		            "label": "Pizza4",
 		            "json_file": "pizza.json"
+		        },
+		        {
+			        "label": "Beef stew",
+			        "json": "beef_stew.jason"
 		        }
 		    ]
 		}

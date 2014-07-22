@@ -1,12 +1,13 @@
 .wrapper  {
 	width: 500px;
-	height: 500px;
+	height: 100%;
 	overflow: hidden;
 	background-color: #f0f0f0;
 	display: inline-block;
 	left: 180px;
 	position: absolute;
 	top: 10px;
+	overflow: scroll;
 }
 
 .wrapper ul li {
@@ -29,6 +30,15 @@ h2 {
 	margin: 0px;
 }
 
+
+ol {
+	list-style-type: none;
+}
+
+
+#instructions {
+	padding: 0;
+}
 
 
 .menu {
