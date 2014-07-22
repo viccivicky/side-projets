@@ -6,6 +6,7 @@
 	display: inline-block;
 	left: 180px;
 	position: absolute;
+	top: 10px;
 }
 
 .wrapper ul li {

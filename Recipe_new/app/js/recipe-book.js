@@ -1,4 +1,5 @@
 $(function() {
+//Why do I need to define an empty function? 
 
 // 1 - a page container to wrap everything - add after step
 
@@ -26,28 +27,49 @@ $(function() {
 
 		var tab_element = $('<div / >', {'class' : 'four_seasons'}).appendTo('#seasons_nav');
 		tab_element.html(json.items[i].label);
+		//always create elements like this
 		//create elements for tabs
 		// enject the id so it can be referenced, append it to the element to the id and references the positioning				
 		
 		tab_element.data('position', i);
 		//label and position
+		
+		//add data here
 	}
 	
 	$('#seasons_nav').on("click", 'div', function(evt) {
 		var position = $(this).data('position'),
 			recipes = json.items[position].recipies;
 		
-		//emptying the wrapper
+		//emptying the wrapper - why
 		$('.wrapper').html('');
 		
 		for(var i= 0; i < recipes.length; i++) {
 			var recipe = recipes[i];
-			$('.wrapper').append('<div class="recipe">' + recipe.label + '</div>');
+			$('.wrapper').append('<div class="recipe">' + recipe.label + '</div>'); //create this like the tab element above - recipe element
+			
+		//reference data here - json file label - json file	
 		}
 	});
 	
 	$('.wrapper').delegate('.recipe', 'click', function() {
 		// Clicking recipe!
+		//grab json file here. set another one above
+		//once get the file name load in json file
+		/*
+				
+			var getJSON = $.getJSON( "app/data/"  + data_var_name , function(json) {
+			  // console.log( "success" );
+			  // The json file loaded correctly, call our functions here
+			  seasons_data = json
+			  populateTabs(json);
+			  
+			}).fail(function() {
+				// There was an error with the json file. 
+		    	console.log( "error" );
+			});
+
+		*/
 	});
 	
 	var seasons_nav = {};

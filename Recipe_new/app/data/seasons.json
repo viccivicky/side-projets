@@ -16,7 +16,7 @@
 		    "label": "Summer",
 		    "recipies": [
 		        {
-		            "label": "Risotto",
+		            "label": "Risotto2",
 		            "json_file": "risotto.json"
 		        },
 		        {
@@ -28,11 +28,11 @@
 		    "label": "Autumn",
 		    "recipies": [
 		        {
-		            "label": "Risotto",
+		            "label": "Risotto3",
 		            "json_file": "risotto.json"
 		        },
 		        {
-		            "label": "Pizza",
+		            "label": "Pizza3",
 		            "json_file": "pizza.json"
 		        }
 		    ]
@@ -40,11 +40,11 @@
 		    "label": "Winter",
 		    "recipies": [
 		        {
-		            "label": "Risotto",
+		            "label": "Risotto4",
 		            "json_file": "risotto.json"
 		        },
 		        {
-		            "label": "Pizza",
+		            "label": "Pizza4",
 		            "json_file": "pizza.json"
 		        }
 		    ]
