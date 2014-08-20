@@ -1,0 +1,37 @@
+{
+    "taxonomy": {
+        "content_list_1": [
+            "Women",
+            "Men",
+            "Children",
+            "The Trench Coat",
+            "Shows & Events",
+            "Foundation",
+            "Heritage"
+        ],
+        "content_list_2": [
+            "New Arrival",
+            "Trench coats",
+            "Ready to wear",
+            "Bags",
+            "Shoes",
+            "Accessories",
+            "Watches",
+            "Fragrance",
+            "Gifts"
+        ],
+        "content_list_3": [
+            "Coats",
+            "Ponchos & Wraps",
+            "Quilts & Puffers",
+            "Jackets",
+            "Dresses",
+            "Tailoring",
+            "Skirts & Trousers",
+            "Shirts",
+            "Knitwear",
+            "Polos & T-Shirts",
+            "Denim"
+        ]
+    }
+}

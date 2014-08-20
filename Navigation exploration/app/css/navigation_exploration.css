@@ -1,0 +1,17 @@
+.content {
+	width: 500px;
+	height: 500px;
+	background-color: #dcdcdc;
+	margin: auto;
+	
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.content_items {
+	font-family: sans-serif;
+	color: black;
+}

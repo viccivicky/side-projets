@@ -1,15 +1,11 @@
 $(function() {
-//Why do I need to define an empty function? 
 
-// 1 - a page container to wrap everything - add after step
-
-	
 	var seasons_data;	// global varibale 
 
 
 	var getJSON = $.getJSON( "app/data/seasons.json", function(json) {
 	  // console.log( "success" );
-	  // The json file loaded correctly, call our functions here
+	  // The json file loaded correctly, call our functions here - why do we need to call function here?
 	  seasons_data = json
 	  populateTabs(json);
 	  
@@ -41,7 +37,7 @@ $(function() {
 		var position = $(this).data('position'),
 			recipes = json.items[position].recipies;
 		
-		//emptying the wrapper - why
+		//emptying the wrapper
 		$('.wrapper').html('');
 		
 		for(var i= 0; i < recipes.length; i++) {
